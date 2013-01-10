@@ -14,14 +14,8 @@
   changed = green
   untracked = cyan
 
-
-[color]
-  ui = true
-[color "diff"]
-  whitespace = red reverse
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
-
 
 [alias]
   st = status
@@ -34,10 +28,9 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
+
 [user]
-	name = Jordi Villar
-	email = jrdi.villar@gmail.com
-[github]
-	user = jrdi
+  name = Jordi Villar
+  email = jrdi.villar@gmail.com
 [push]
-	default = matching
+  default = simple
