@@ -16,6 +16,7 @@
 
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+  excludesfile = /opt/boxen/config/git/gitignore
 
 [alias]
   st = status
@@ -29,8 +30,12 @@
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   ls = ls-files
 
+[hub]
+  protocol = https
+[credential]
+  helper = /opt/boxen/bin/boxen-git-credential
 [user]
   name = Jordi Villar
-  email = jrdi.villar@gmail.com
+  email = jordi.villar@crisalix.com
 [push]
   default = simple
