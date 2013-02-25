@@ -11,6 +11,6 @@ fi
 
 export PS1='\[\033[01;33m\]$(__rbenv_ps1) \[\033[01;37m\]\w\[\033[01;33m\]$(__git_ps1 "[%s]") \[\033[01;37m\]\$\[\033[00m\] '
 
-if [ -f "/opt/github/env.sh" ]
-  then source "/opt/github/env.sh"
+if [ -f "/opt/boxen/env.sh" ]
+  then source "/opt/boxen/env.sh"
 fi
