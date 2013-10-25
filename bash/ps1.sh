@@ -53,6 +53,9 @@ __git_ps1 ()
 }
 
 __rbenv_ps1 () {
-  rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
-  printf $rbenv_ruby_version
+  if which rbenv > /dev/null
+  then
+    rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
+    printf $rbenv_ruby_version
+  fi
 }
