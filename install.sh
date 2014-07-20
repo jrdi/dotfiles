@@ -1,5 +1,12 @@
+# Bash profile configuration
 ln -sf ~/Code/dotfiles/bash/main.symlink ~/.bash_profile
-ln -sf ~/Code/dotfiles/gitconfig.symlink ~/.gitconfig
+
+# Git configuration
+ln -sf ~/Code/dotfiles/git/gitconfig.symlink ~/.gitconfig
+ln -sf ~/Code/dotfiles/git/gitignore.symlink ~/.gitignore
+
+# Ruby configuration
+ln -sf ~/Code/dotfiles/ruby/gemrc.symlink ~/.gemrc
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
